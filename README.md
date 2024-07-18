@@ -1,4 +1,3 @@
-```markdown
 # SSH Stunnel Auto Installer Script
 
 This script automatically installs and configures an SSH Stunnel SSL environment on Ubuntu 18.04.2 LTS. It sets up essential components including OpenSSL, Dropbear, Squid, Stunnel, and BadVPN.
@@ -21,20 +20,20 @@ This script automatically installs and configures an SSH Stunnel SSL environment
 1. **Clone the Repository**
 
    ```sh
-   git clone <repository_url>
-   cd <repository_directory>
+   git clone https://github.com/CRB-CyberSec-Dev/SSHTunnelScriptAutoInstaller.git
+   cd SSHTunnelScriptAutoInstaller
    ```
 
 2. **Make the Script Executable**
 
    ```sh
-   chmod +x sshauto
+   chmod +x sshauto.sh
    ```
 
 3. **Run the Installer**
 
    ```sh
-   ./sshauto install
+   ./sshauto.sh install
    ```
 
    Follow the prompts to enter required information such as IP address and SSL certificate details.
@@ -44,7 +43,7 @@ This script automatically installs and configures an SSH Stunnel SSL environment
 To create a new user:
 
 ```sh
-./sshauto user
+./sshauto.sh user
 ```
 
 Follow the prompts to enter the username and password.
@@ -54,7 +53,7 @@ Follow the prompts to enter the username and password.
 To configure BadVPN to start automatically:
 
 ```sh
-./sshauto autostart
+./sshauto.sh autostart
 ```
 
 ## Service Information
@@ -111,4 +110,3 @@ This project is licensed under the MIT License. See the `LICENSE` file for more 
 
 <a href="#" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
 
-```
